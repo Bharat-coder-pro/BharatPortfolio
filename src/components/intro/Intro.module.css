@@ -1,0 +1,16 @@
+.intro{
+  background-color: #F8F8F8;
+}
+.guyImg{
+  filter: drop-shadow(5px 5px 10px black);
+  background-color: rgba(0, 0, 0, 0.003);
+  border-radius: 100%;
+}
+.introText{
+  font-size: 24px;
+  font-weight: 500;
+}
+.greet{
+  font-family: cursive;
+  font-size: x-large;
+}

@@ -1,0 +1,13 @@
+.navbar{
+  background-color: #F8F8F8;
+  width: 100%;
+  z-index: 1;
+}
+.navItems{
+  min-width: 100px;
+}
+.dash{
+  width: 100%;
+  height: 1%;
+  background-color: rgba(21, 21, 21, 0.901);
+}

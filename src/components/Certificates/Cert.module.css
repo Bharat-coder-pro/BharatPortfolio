@@ -1,0 +1,17 @@
+.galleryCerts{
+  transform: translateX(-10px);
+  z-index: 2;
+}
+.cert{
+  overflow: hidden;
+  background-color: #F8F8F8;
+  z-index: 1;
+}
+.certificate:hover{
+ scale: 0.995;
+ filter: drop-shadow(2px 2px 5px #33333386);
+}
+.certImg{
+  position: relative;
+  z-index: 3;
+}
