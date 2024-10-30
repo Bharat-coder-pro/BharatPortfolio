@@ -17,6 +17,11 @@ const ContextProvider = ({children}) => {
       body: "I really enjoyed this freeCodeCamp's responsive web design course it cover all aspects regarding add responsvieness to Web Designs and all foundational and useful concepts of HTML and CSS needed."
     },
     {
+      img: bs,
+      title: "Responsive Web Design with BootStrap",
+      body: "I really enjoyed this infosys responsive web design course with BootStrap it cover all aspects regarding add responsvieness to Web Designs and all foundational and useful concepts Bootstap classes needed."
+    },
+    {
       img: cppB,
       title: "Basics of Programming in C++",
       body: "I've learnt basics and foundational concepts of programming with C++.I've learnt to build logics in Programming using concepts such as structural statement, variables, data types, primitive and non-primitive etc..."

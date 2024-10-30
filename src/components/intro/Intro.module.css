@@ -5,6 +5,12 @@
   filter: drop-shadow(5px 5px 10px black);
   background-color: rgba(0, 0, 0, 0.003);
   border-radius: 100%;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+.guyImg:hover{
+  scale: 0.993;
 }
 .introText{
   font-size: 24px;

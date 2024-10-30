@@ -9,21 +9,30 @@ import { useRef } from 'react'
 const Cert = () => {
    const sliderCerts = useRef(null);
   const {certs} = useContext(appContext);
+  let tl;
+  tl = gsap.timeline();
   useEffect(()=>{
-    gsap.to(sliderCerts.current , {
-      x: '-70%',        
+    tl.to(sliderCerts.current , {
+      x: '-100%',        
       duration: 10,     
       ease: "linear",    // Linear easing for smooth continuous motion
       repeat: -1,        // Repeat infinitely
       repeatDelay: 0,
     })
-  },[])
+  },[]);
+  function toggleAnimation() {
+    if (tl.isActive()) {
+      tl.pause();
+    } else {
+      tl.play();
+    }
+  }
   return (
     <div id='certs' className={`${css.cert} container-fluid p-3 position-relative`}>
       <div className='display-6 text-center text-dark fw-bolder p-4 my-3'>My Certifications</div>
       <div ref={sliderCerts} className={`${css.galleryCerts} d-flex gap-4`}>
         { certs.map((cert)=>{return(
-          <div className={`${css.certificate} card col-md-4 col-lg-4 col-sm-5 col-xs-6`}>
+          <div  onMouseEnter={()=>toggleAnimation()} className={`${css.certificate} card col-md-4 col-lg-4 col-sm-5 col-xs-6`}>
           <img src={cert.img} className={`${css.certImg} card-img-top`} alt="..." />
           <div className="card-body">
             <h5 className="card-title text-center fw-bold">{cert.title}</h5>
