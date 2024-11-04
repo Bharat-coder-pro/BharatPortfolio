@@ -7,6 +7,11 @@
   background-color: #F8F8F8;
   z-index: 1;
 }
+.certificate{
+ overflow: auto;
+ min-width: 300px;
+ min-height: 500px;
+}
 .certificate:hover{
  scale: 0.995;
  filter: drop-shadow(2px 2px 5px #33333386);
@@ -14,4 +19,29 @@
 .certImg{
   position: relative;
   z-index: 3;
+}
+.sliderBtn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: transparent;
+}
+#lt{
+  left: 10px;
+  top: 50%;
+}
+
+#lt:hover{
+  filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.3));
+}
+
+
+#rt{
+  right: 10px;
+  top: 50%;
+}
+
+#rt:hover{
+  filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.3));
 }

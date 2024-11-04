@@ -2,7 +2,7 @@ import React from 'react'
 import css from './Portfolio.module.css'
 const Project = ({name,img,bio,url}) => {
   return (
-    <div className={`${css.proCard}  container d-flex gap-3 p-1 align-items-center justify-content-center`}>
+    <div className={`${css.proCard} container-fluid  d-flex gap-3 p-1 align-items-center justify-content-center`}>
       <a href={url} className={`d-inline-block ${css.imgWrap}`}>
         <img src={img} alt="name-img" className={`${css.proImg} img-responsive`}/>
       </a>

@@ -5,7 +5,7 @@ const NavBar = () => {
     
     }
   return (
-    <div className={`${css.navbar} d-flex px-5 py-1 gap-5 justify-content-start position-fixed`}>
+    <div className={`${css.navbar} d-flex flex-wrap px-5 py-1 gap-5 justify-content-start position-fixed`}>
       <a href="#welcome">
       <button onClick={(ev)=>navBtn(ev)} id='wcBtn' className={`${css.navItems} btn btn-light fw-bolder text-dark p-2`}>Welcome</button>
       </a>

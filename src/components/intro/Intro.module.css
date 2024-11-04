@@ -9,6 +9,11 @@
   top: 5%;
   left: 1%;
 }
+@media (max-width: 1008px) {
+  .guyImg {
+      display: none;
+  }
+}
 .guyImg:hover{
   scale: 0.993;
 }

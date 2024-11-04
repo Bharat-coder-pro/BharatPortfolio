@@ -7,6 +7,7 @@ import cppD from './assets/cpp-dsa.png'
 import cppC from './assets/cpp-class_obj.png'
 import pokeImg from './assets/pokes.jpg'
 import bs from './assets/bs.png'
+import bg from './assets/bgBox.png'
 export const appContext = createContext({certificates: [], portfolio: []});
 
 const ContextProvider = ({children}) => {
@@ -45,7 +46,21 @@ const ContextProvider = ({children}) => {
       img: bs,
       title: "Responsive Web Design with BootStrap",
       body: "I really enjoyed this infosys responsive web design course with BootStrap it cover all aspects regarding add responsvieness to Web Designs and all foundational and useful concepts Bootstap classes needed."
+    }, {
+      img: cppC,
+      title: "Classes and Objects with C++",
+      body: "I've learnt concepts like Classes and Objects in this course and many concepts regarding OOPs concepts."
     },
+    {
+      img: cppD,
+      title: "DSA in C++",
+      body: "I've learnt Data Structures and Algorithms with C++ in this course which helped me to improve my logic building and problem solving skills."
+    },
+    {
+      img: bs,
+      title: "Responsive Web Design with BootStrap",
+      body: "I really enjoyed this infosys responsive web design course with BootStrap it cover all aspects regarding add responsvieness to Web Designs and all foundational and useful concepts Bootstap classes needed."
+    }
   ]);
   const [portfolio, setPortfolio] = useState([
     {
@@ -65,7 +80,7 @@ const ContextProvider = ({children}) => {
     },
   ]);
   return(
-    <appContext.Provider value={{certs,portfolio}}>
+    <appContext.Provider value={{certs,portfolio,bg}}>
       {children}
     </appContext.Provider>
   )

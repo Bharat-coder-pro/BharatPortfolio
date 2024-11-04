@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import css from './Intro.module.css'
 import guy from '../../assets/GUy.png'
+import { appContext } from '../../Context';
 const Intro = () => {
+ const {bg} = useContext(appContext);
   return (
-    <div id='intro' className={`${css.intro} container-fluid position-relative`}>
+    <div style={{backgroundImage: `url(${bg})`}} id='intro' className={`${css.intro} container-fluid position-relative`}>
         <div className="row">
           <div className="col-md-3 col-lg-4">
             <img className={`${css.guyImg} img-fluid`} src={guy} alt="" />
